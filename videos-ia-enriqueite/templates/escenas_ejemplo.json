@@ -1,0 +1,42 @@
+{
+  "formato": "reel",
+  "gancho_hasta": 2.8,
+  "escenas": [
+    {
+      "inicio": 0.0,
+      "fin": 2.8,
+      "texto_pantalla": "Parece sano. No lo es.",
+      "iconos": ["lupa", "alerta"],
+      "animacion": "entrada_escala",
+      "imagen": null,
+      "fuente": null
+    },
+    {
+      "inicio": 2.8,
+      "fin": 8.0,
+      "texto_pantalla": "El azúcar escondido",
+      "iconos": ["plato", "lupa", "alerta"],
+      "animacion": "entrada_abajo",
+      "imagen": null,
+      "fuente": null
+    },
+    {
+      "inicio": 8.0,
+      "fin": 14.0,
+      "texto_pantalla": "[N] g de azúcar",
+      "iconos": ["grafico"],
+      "animacion": "pulso",
+      "imagen": null,
+      "fuente": "Fuente: [organización], [mes año]"
+    },
+    {
+      "inicio": 14.0,
+      "fin": 17.0,
+      "texto_pantalla": "[TU CIERRE]",
+      "iconos": ["check"],
+      "animacion": "entrada_escala",
+      "imagen": null,
+      "fuente": null
+    }
+  ]
+}
