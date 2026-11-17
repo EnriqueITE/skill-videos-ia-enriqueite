@@ -1,3 +1,5 @@
+![Crea vídeos con IA · EnriqueITE. De la idea al vídeo.](assets/social-preview.jpg)
+
 # Crea vídeos con IA · EnriqueITE
 
 Una skill en español para convertir una idea en un guion, escenas y un vídeo para
@@ -5,6 +7,10 @@ Una skill en español para convertir una idea en un guion, escenas y un vídeo p
 
 **Autor:** [Enrique Serrano Aparicio · EnriqueITE](https://github.com/EnriqueITE)  
 **Licencia:** [GPLv3](LICENSE) · `GPL-3.0-only`
+
+[🚀 Instalar la skill](#empieza-aquí) · [📚 Ver los prompts](videos-ia-enriqueite/prompts/README.md) · [☕ Invítame a un café](https://buymeacoffee.com/enriqueite)
+
+**💡 Idea → 🔎 Fuentes → ✍️ Guion → 🎬 Escenas → 🎙️ Voz → ▶️ Vídeo**
 
 ## Empieza aquí
 
