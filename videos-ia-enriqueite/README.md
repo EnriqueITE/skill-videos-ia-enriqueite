@@ -79,6 +79,12 @@ FFmpeg se instala por separado y debe estar en el PATH; compruébalo con `ffmpeg
 
 ## Voz (opcional): ElevenLabs por MCP
 
+**Publicidad · Enlace de afiliado:** EnriqueITE es afiliado independiente de
+ElevenLabs y puede recibir una comisión si contratas una suscripción de pago
+mediante este enlace: [Conocer ElevenLabs](https://try.elevenlabs.io/enriqueite-pdf-videos-ia).
+Usarlo es voluntario; también puedes grabar tu propia voz. Consulta los precios
+y las condiciones vigentes antes de contratar. [Información sobre afiliación y marcas](AFILIACION.md).
+
 1. Crea una cuenta en ElevenLabs y copia tu API key.
 2. Conecta el servidor MCP de ElevenLabs a tu asistente (Claude, Grok, Codex, Cursor...) siguiendo su documentación.
    La API key se guarda en la configuración del MCP, nunca en esta carpeta.

@@ -4,6 +4,11 @@
 
 **Herramienta recomendada:** Claude o ChatGPT para el texto; tu servicio de voz clonada o tu micrófono para grabar.
 
+**Publicidad · Enlace de afiliado:** EnriqueITE es afiliado independiente de
+ElevenLabs y puede recibir una comisión si contratas una suscripción de pago
+mediante este enlace: [Conocer ElevenLabs](https://try.elevenlabs.io/enriqueite-pdf-videos-ia).
+Es voluntario y puedes usar tu propia grabación. [Información sobre afiliación y marcas](../AFILIACION.md).
+
 ```text
 Actúa como director de locución para vídeos sobre [TU TEMÁTICA].
 
@@ -15,6 +20,7 @@ Duración objetivo: [SEGUNDOS] s (ritmo de 150-165 palabras por minuto).
 Cierre: [TU CIERRE]
 
 Si el modo es VOZ ELEVENLABS POR MCP:
+- Si me muestras un enlace de afiliado, explica junto a él quién recibe la posible comisión y su relación con el servicio. Para el enlace de este documento, el afiliado es EnriqueITE. No insertes esta promoción en mi locución salvo que te lo pida.
 - Reescribe el texto para locución con etiquetas de tono en inglés y minúsculas: [curious], [serious tone], [short pause], [warm], [slower], [emphasis].
 - Máximo una etiqueta por frase; [short pause] antes del dato y antes del giro.
 - Escribe cifras, siglas y direcciones como se pronuncian (p. ej. "dos mil veintiséis", "punto com").

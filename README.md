@@ -101,6 +101,13 @@ Los prompts permiten preparar esas tareas con herramientas adicionales.
 ElevenLabs es **opcional** y utiliza tu cuenta y tus créditos. Puedes grabar tu
 propia locución. No se incluyen claves, suscripciones ni un servidor MCP.
 
+**Publicidad · Enlace de afiliado:** EnriqueITE es afiliado independiente de
+ElevenLabs y puede recibir una comisión si contratas una suscripción de pago
+mediante este enlace: [Conocer ElevenLabs](https://try.elevenlabs.io/enriqueite-pdf-videos-ia).
+Usarlo es voluntario y no es necesario para utilizar la skill. Consulta los precios
+y las condiciones vigentes del servicio antes de contratar.
+[Información sobre afiliación y marcas](videos-ia-enriqueite/AFILIACION.md).
+
 ## Licencia, vídeos y versiones derivadas
 
 Copyright (c) 2026 Enrique Serrano Aparicio (EnriqueITE).
