@@ -27,6 +27,7 @@ Archivos de apoyo (léelos solo cuando el paso los necesite):
    Ofrece guardar las respuestas con `templates/perfil_creador.md`.
 2. Aplica siempre los datos del perfil: `[TU TEMÁTICA]`, `[TU AUDIENCIA]`, `[TUS COLORES]`, `[TU CIERRE]` y las preferencias de estilo.
    Si falta algún dato, usa los valores por defecto de esta skill y dilo.
+   Si no hay colores de marca, usa la paleta neutra de blancos y grises del montador. La portada del repositorio identifica a EnriqueITE; no es una referencia de marca para los vídeos de otras personas.
 3. Determina el formato: **reel 9:16 de 25-35 s** o **YouTube 16:9 de 2-3 min**. Si no se indica, propone reel.
 4. Si la persona solo pide una parte (por ejemplo "revisa este guion"), salta directamente al paso que corresponda.
 

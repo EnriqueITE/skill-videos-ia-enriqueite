@@ -36,11 +36,12 @@ from PIL import Image, ImageDraw, ImageFont
 # ------------------------------------------------------------------ configuración
 FORMATOS = {"reel": (1080, 1920), "youtube": (1920, 1080)}
 FPS = 30
-# Colores por defecto: cámbialos por los de tu marca (o usa --color-principal / --color-acento).
-COLOR_PRINCIPAL = "#1F2937"   # texto e iconos
-COLOR_ACENTO = "#F5C518"      # subrayados y palabra clave
+# Paleta neutra de ejemplo, independiente de la marca de EnriqueITE.
+# El asistente debe adaptarla al perfil del creador usando --color-principal / --color-acento.
+COLOR_PRINCIPAL = "#262626"   # gris oscuro: texto e iconos
+COLOR_ACENTO = "#808080"      # gris medio: subrayados y palabra clave
 COLOR_FONDO_REEL = "#FFFFFF"  # fondo claro por defecto en reels (cámbialo por el tuyo)
-COLOR_FONDO_YT = "#111827"    # fondo de respaldo en YouTube si la escena no tiene imagen
+COLOR_FONDO_YT = "#171717"    # gris casi negro: respaldo en YouTube si no hay imagen
 FUENTES_CANDIDATAS = [        # se usa la primera que exista si no pasas --fuente
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/Library/Fonts/Arial Bold.ttf",
@@ -145,8 +146,8 @@ class Montador:
         return img.crop((x0, y0, x0 + cw, y0 + ch)).resize((self.W, self.H), Image.BILINEAR)
 
     # --- iconos (PNG con transparencia o marcador genérico)
-    def icono(self, nombre, tam):
-        clave = (nombre, tam)
+    def icono(self, nombre, tam, oscuro=False):
+        clave = (nombre, tam, oscuro)
         if clave in self._cache_iconos:
             return self._cache_iconos[clave]
         ruta = os.path.join(self.carpeta, "assets", "iconos", nombre + ".png")
@@ -155,7 +156,8 @@ class Montador:
         else:
             ic = Image.new("RGBA", (tam, tam), (0, 0, 0, 0))
             d = ImageDraw.Draw(ic)
-            d.ellipse((4, 4, tam - 4, tam - 4), outline=self.principal + (255,), width=max(3, tam // 18))
+            contorno = (235, 235, 235) if oscuro else self.principal
+            d.ellipse((4, 4, tam - 4, tam - 4), outline=contorno + (255,), width=max(3, tam // 18))
             letra = nombre[:1].upper() or "?"
             tw = d.textlength(letra, font=self.f_icono)
             d.text(((tam - tw) / 2, tam * 0.18), letra, font=self.f_icono, fill=self.acento + (255,))
@@ -211,7 +213,7 @@ class Montador:
                     continue
                 pulso = 1 + 0.04 * math.sin(2 * math.pi * (t_loc / 0.9 + k * 0.33))
                 lado = max(1, int(tam * (0.8 + 0.2 * e) * pulso))
-                ic = self.icono(nombre, tam).resize((lado, lado), Image.BILINEAR)
+                ic = self.icono(nombre, tam, oscuro=bool(oscuro)).resize((lado, lado), Image.BILINEAR)
                 a = ic.split()[3].point(lambda v: int(v * e))
                 ic.putalpha(a)
                 dy = int((1 - e) * tam * 0.3)

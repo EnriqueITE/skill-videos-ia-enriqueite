@@ -120,6 +120,7 @@ python3 scripts/montar_video.py --formato reel --entrada ./videos/AAAA-MM-DD_mi-
 
 - Rellena `templates/perfil_creador.md` y guárdalo como `perfil.md` en tu carpeta de vídeos.
 - Usa tus colores con `--color-principal` y `--color-acento` (o cambia los valores por defecto en `scripts/montar_video.py`).
+- El montador parte de una paleta neutra de blancos y grises, independiente de la marca de EnriqueITE. El asistente puede leer el código como referencia y adaptarlo a tu perfil; los fondos de respaldo se ajustan en `COLOR_FONDO_REEL` y `COLOR_FONDO_YT`.
 - Las reglas de `SKILL.md` son **buenas prácticas por defecto**: gancho de 2-3 s, fuentes en pantalla,
   no nombrar personas, datos personales tapados y sin promesas exageradas. Ajústalas a tu canal en tu perfil.
 
