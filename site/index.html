@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b35"><meta name="description" content="Una skill para preparar guiones con fuentes, diseñar escenas y montar vídeos en tu equipo con Python y FFmpeg.">
+  <title>Crea vídeos con IA · Enrique Serrano Aparicio</title>
+  <link rel="stylesheet" href="style.css"><script src="page.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header><div class="wrap mast"><a class="author" href="https://enriqueite.github.io/">Enrique Serrano Aparicio</a><nav aria-label="Navegación"><a href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite">GitHub ↗</a><span class="languages"><a data-language="es" lang="es" href="index.html" aria-current="page">ES</a> / <a data-language="en" lang="en" href="en/index.html">EN</a></span></nav></div></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="title"><div class="wrap stage">
+      <div class="intro"><p class="eyebrow">Skill de producción audiovisual</p><h1 id="title">Crea vídeos<br><em>con IA.</em></h1>
+      <p class="lead">Trabaja el guion con tu asistente, comprueba las fuentes y decide qué escenas producir. El montaje final se hace en tu equipo.</p>
+      <div class="actions"><a class="primary" href="#instalar">Instalar la skill ↓</a><a class="sub" href="#brief">Preparar un vídeo ↓</a></div></div>
+      <div class="art" role="img" aria-label="Estudio de edición con micrófono, móvil y portátil con una línea de tiempo."></div>
+    </div></section>
+    <section class="wrap process"><p class="eyebrow">Cómo se trabaja</p><h2>Del guion al montaje.</h2>
+      <div class="steps">
+      <article><h3>Documentar</h3><p>Define tu público y el tema. Contrasta cada dato con su fuente original y elige el enfoque antes de escribir.</p></article>
+      <article><h3>Aprobar el guion</h3><p>Revisa el gancho, los tiempos y la narración. El método se detiene aquí para que apruebes el texto antes de preparar las escenas.</p></article>
+      <article><h3>Montar en local</h3><p>Reúne imágenes, locución y subtítulos. El script de Python lee escenas.json y usa FFmpeg para exportar el MP4 en vertical u horizontal.</p></article>
+      </div><a class="text" href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite/tree/main/videos-ia-enriqueite/prompts">Explorar los 15 prompts ↗</a>
+    </section>
+    <section class="brief" id="brief"><div class="wrap two"><div><p class="eyebrow">Plantilla interactiva</p><h2>Tu próximo vídeo.</h2><p>Elige un formato y escribe un tema. Copia el encargo en tu agente cuando tengas instalada la skill.</p></div>
+      <div class="composer"><label for="topic">Tema del vídeo</label><input id="topic" maxlength="180" value="Cómo se graba el sonido de la lluvia">
+      <fieldset><legend>Formato</legend><label><input type="radio" name="format" value="reel" checked> Reel / Short · 9:16</label><label><input type="radio" name="format" value="youtube"> YouTube · 16:9</label></fieldset>
+      <p class="prompt" id="prompt">Usa la skill videos-ia-enriqueite para preparar un reel vertical sobre «Cómo se graba el sonido de la lluvia». Propón fuentes y espera mi aprobación del guion antes de producir las escenas.</p>
+      <button class="copy" type="button" data-copy="prompt" hidden>Copiar encargo</button><span class="status" role="status"></span></div>
+    </div></section>
+    <section class="wrap install two" id="instalar"><div><p class="eyebrow">Instalación</p><h2>Añádela a tu agente.</h2><p>Copia esta instrucción en un agente compatible con SKILL.md. La carpeta instalable se llama videos-ia-enriqueite.</p></div>
+      <div><pre id="instruction">Instala la skill de este repositorio
+https://github.com/EnriqueITE/skill-videos-ia-enriqueite
+Usa la carpeta videos-ia-enriqueite que contiene SKILL.md.</pre>
+      <button type="button" class="copy" data-copy="instruction" hidden>Copiar instrucción</button><span class="status" role="status"></span>
+      <p class="requirements">Para renderizar en local necesitas Python 3.10 o posterior, Pillow, NumPy y FFmpeg con libx264. Puedes grabar tu propia voz.</p>
+      <a class="text" href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite/tree/main/videos-ia-enriqueite">Consultar la guía completa ↗</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap mast"><a href="https://enriqueite.github.io/">Enrique Serrano Aparicio</a><a href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite/blob/main/LICENSE">GPL-3.0-only ↗</a></div></footer>
+</body></html>
