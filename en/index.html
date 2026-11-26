@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b35"><meta name="description" content="An agent skill for sourcing scripts, planning scenes and rendering videos on your computer with Python and FFmpeg.">
+  <title>Create videos with AI · Enrique Serrano Aparicio</title>
+  <link rel="stylesheet" href="../style.css"><script src="../page.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap mast"><a class="author" href="https://enriqueite.github.io/">Enrique Serrano Aparicio</a><nav aria-label="Navigation"><a href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite">GitHub ↗</a><span class="languages"><a data-language="es" lang="es" href="../index.html">ES</a> / <a data-language="en" lang="en" href="../en/index.html" aria-current="page">EN</a></span></nav></div></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="title"><div class="wrap stage">
+      <div class="intro"><p class="eyebrow">Video production skill</p><h1 id="title">Create videos<br><em>with AI.</em></h1>
+      <p class="lead">Work on a script with your assistant, check the sources and decide which scenes to produce. The final edit runs on your computer.</p>
+      <div class="actions"><a class="primary" href="#instalar">Install the skill ↓</a><a class="sub" href="#brief">Plan a video ↓</a></div></div>
+      <div class="art" role="img" aria-label="Editing desk with a microphone, phone and laptop showing a timeline."></div>
+    </div></section>
+    <section class="wrap process"><p class="eyebrow">The workflow</p><h2>From script to final cut.</h2>
+      <div class="steps">
+      <article><h3>Research</h3><p>Define your audience and topic. Check each claim against its original source and choose your angle before writing.</p></article>
+      <article><h3>Approve the script</h3><p>Review the hook, timing and narration. The workflow pauses for you to approve the text before preparing the scenes.</p></article>
+      <article><h3>Render locally</h3><p>Gather images, narration and subtitles. The Python script reads escenas.json and uses FFmpeg to export a portrait or landscape MP4.</p></article>
+      </div><a class="text" href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite/tree/main/videos-ia-enriqueite/prompts">Explore the 15 prompts ↗</a>
+    </section>
+    <section class="brief" id="brief"><div class="wrap two"><div><p class="eyebrow">Interactive template</p><h2>Your next video.</h2><p>Pick a format and enter a topic. Once the skill is installed, copy the brief into your agent.</p></div>
+      <div class="composer"><label for="topic">Video topic</label><input id="topic" maxlength="180" value="How to record the sound of rain">
+      <fieldset><legend>Format</legend><label><input type="radio" name="format" value="reel" checked> Reel / Short · 9:16</label><label><input type="radio" name="format" value="youtube"> YouTube · 16:9</label></fieldset>
+      <p class="prompt" id="prompt">Use the videos-ia-enriqueite skill to plan a vertical short about “How to record the sound of rain”. Suggest sources and wait for my approval of the script before producing the scenes.</p>
+      <button class="copy" type="button" data-copy="prompt" hidden>Copy brief</button><span class="status" role="status"></span></div>
+    </div></section>
+    <section class="wrap install two" id="instalar"><div><p class="eyebrow">Installation</p><h2>Add it to your agent.</h2><p>Copy this instruction into an agent that supports SKILL.md. The installable folder is named videos-ia-enriqueite.</p></div>
+      <div><pre id="instruction">Install the skill from this repository
+https://github.com/EnriqueITE/skill-videos-ia-enriqueite
+Use the videos-ia-enriqueite folder containing SKILL.md.</pre>
+      <button type="button" class="copy" data-copy="instruction" hidden>Copy instruction</button><span class="status" role="status"></span>
+      <p class="requirements">Local rendering requires Python 3.10 or later, Pillow, NumPy and FFmpeg with libx264. You can record your own narration.</p>
+      <a class="text" href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite/tree/main/videos-ia-enriqueite">Read the full guide ↗</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap mast"><a href="https://enriqueite.github.io/">Enrique Serrano Aparicio</a><a href="https://github.com/EnriqueITE/skill-videos-ia-enriqueite/blob/main/LICENSE">GPL-3.0-only ↗</a></div></footer>
+</body></html>
